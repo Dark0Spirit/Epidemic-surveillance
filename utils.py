@@ -2,6 +2,8 @@ import time
 import pymysql
 from decimal import Decimal
 import json
+
+
 def get_time():
     time_str = time.strftime("%Y{}%m{}%d{} %X")
     return time_str.format("年", "月", "日")
@@ -55,7 +57,7 @@ def get_c1_data():
     res = query(sql)
 
     res_list = [str(i) for i in res[0]]
-    res_tuple=tuple(res_list)
+    res_tuple = tuple(res_list)
     return res_tuple
 
 
@@ -98,15 +100,6 @@ def get_r1_data():
           'and province in ("北京","上海","天津","重庆") group by province) as a ' \
           'ORDER BY confirm DESC LIMIT 5'
     res = query(sql)
-    return res
-
-
-def get_r2_data():
-    """
-    :return:  返回最近的20条热搜
-    """
-    sql = 'select content from hotsearch order by id desc limit 20'
-    res = query(sql)  # 格式 (('民警抗疫一线奋战16天牺牲1037364',), ('四川再派两批医疗队1537382',)
     return res
 
 
