@@ -64,20 +64,6 @@ def get_r1_data():
     return jsonify({"city": city, "confirm": confirm})
 
 
-@app.route("/r2")
-def get_r2_data():
-    data = utils.get_r2_data()  # 格式 (('民警抗疫一线奋战16天牺牲1037364',), ('四川再派两批医疗队1537382',)
-    d = []
-    for i in data:
-        k = i[0].rstrip(string.digits)  # 移除热搜数字
-        v = i[0][len(k):]  # 获取热搜数字
-        ks = extract_tags(k)  # 使用jieba 提取关键字
-        for j in ks:
-            if not j.isdigit():
-                d.append({"name": j, "value": v})
-    return jsonify({"kws": d})
-
-
 @app.route("/time")
 def get_time():
     return utils.get_time()
