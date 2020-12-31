@@ -1,9 +1,33 @@
 # 项目架构
-数据获取（Python爬虫）>>数据持久化（MySQL）>>Flask搭建Web后台>>数据可视化(H5+Echarts)
+- **Flask** 
+  搭建Web服务器，提供网站运行环境
+
+- **MySql** 
+  数据存储
+
+- **ECharts**
+  数据可视化渲染，百度
 
 
-# 项目详细解析_博客
-点击进入  [博客链接](https://lfengting.gitee.io/blog/2020/03/24/python%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/)
 
+# 文件结构
 
-### 有问题或需要更多资料，欢迎到微信公众号【大数据编程】后台私信我。
+- **`static`**
+  - **`css`**
+    - mian.css
+  - **`js`**
+    - china.js
+    - controller.js
+    - ec_center.js
+    - ec_left1.js
+    - ec_left2.js
+    - ec_right1.js
+    - echarts.min.js
+    - echarts-wordcloud.min.js
+    - jquery-1.11.1.min.js
+- **`templates`**
+  - main.html
+- app.py
+- README.md
+- spider.py
+- utils.py
