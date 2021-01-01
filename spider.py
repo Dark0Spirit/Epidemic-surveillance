@@ -256,25 +256,6 @@ def update_history():
 
 
 if __name__ == "__main__":
-    # l = len(sys.argv)
-    # if l == 1:
-    #     s = """
-    #     请输入参数
-    #     参数说明：
-    #     up_his  更新历史记录表
-    #     up_hot  更新实时热搜
-    #     up_det  更新详细表
-    #     """
-    #     print(s)
-    # else:
-    #     order = sys.argv[1]
-    #     if order == "up_his":
-    #         update_history()
-    #     elif order == "up_det":
-    #         update_details()
-    #     elif order == "up_hot":
-    #         update_hotsearch()
 
     update_history()
     update_details()
-    # update_hotsearch()

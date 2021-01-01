@@ -29,11 +29,11 @@
     - echarts-wordcloud.min.js
     - jquery-1.11.1.min.js
 - **`templates`**
-  - main.html
+  - main.html（首页）
 - app.py
-- README.md
-- spider.py
-- utils.py
+- README.md（本文档）
+- spider.py（爬虫爬取腾讯的数据）
+- utils.py（数据库）
 
 
 
