@@ -19,11 +19,12 @@ var ec_center_option = {
         textStyle: {
             fontSize: 8,
         },
-        splitList: [{ start: 1,end: 9 },
-            {start: 10, end: 99 }, 
-			{ start: 100, end: 999 },
-            {  start: 1000, end: 9999 },
-            { start: 10000 }],
+        //图例
+        splitList: [{start: 1, end: 9},
+            {start: 10, end: 99},
+            {start: 100, end: 999},
+            {start: 1000, end: 9999},
+            {start: 10000}],
         color: ['#8A3310', '#C64918', '#E55B25', '#F2AD92', '#F9DCD1']
     },
     //配置属性
@@ -54,7 +55,7 @@ var ec_center_option = {
                 fontSize: 8,
             }
         },
-        data:[] //mydata //数据
+        data: [] //mydata //数据
     }]
 };
 ec_center.setOption(ec_center_option)
