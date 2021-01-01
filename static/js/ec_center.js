@@ -42,7 +42,7 @@ var ec_center_option = {
             emphasis: { //鼠标滑过地图高亮的相关设置
                 borderWidth: .5,
                 borderColor: '#4b0082',
-                areaColor: "#fff",
+                areaColor: "#f0f",
             }
         },
         label: {

@@ -80,22 +80,13 @@ function get_r1_data() {
         }
     })
 }
-function get_r2_data() {
-    $.ajax({
-        url: "/r2",
-        success: function (data) {
-            ec_right2_option.series[0].data=data.kws;
-            ec_right2.setOption(ec_right2_option);
-        }
-    })
-}
+
 gettime()
 get_c1_data()
 get_c2_data()
 get_l1_data()
 get_l2_data()
 get_r1_data()
-get_r2_data()
 
 setInterval(gettime,1000)
 setInterval(get_c1_data,1000*10)
