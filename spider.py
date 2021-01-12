@@ -71,7 +71,7 @@ def get_tencent_data():
     # 下面就不用动了
     details = []  # 当日详细数据
     update_time = data_all["lastUpdateTime"]
-    data_country = data_all["areaTree"]  # list 25个国家
+    data_country = data_all["areaTree"]
     data_province = data_country[0]["children"]  # 中国各省
     for pro_infos in data_province:
         province = pro_infos["name"]  # 省名
