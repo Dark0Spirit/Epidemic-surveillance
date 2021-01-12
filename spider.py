@@ -43,7 +43,7 @@ def get_tencent_data():
     res = json.loads(r.text)  # json字符串转字典
     data_all = json.loads(res['data'])
 
-    # 再加上history的配套东东++++++++
+    # 再加上history的
     r_his = requests.get(url_his, headers)
     res_his = json.loads(r_his.text)
     data_his = json.loads(res_his['data'])
