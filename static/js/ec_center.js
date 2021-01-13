@@ -1,4 +1,4 @@
-var ec_center = echarts.init(document.getElementById('c2'));
+var ec_center = echarts.init(document.getElementById('c2'),"dark");
 
 var mydata = [{'name': '上海', 'value': 318}, {'name': '云南', 'value': 162}]
 
